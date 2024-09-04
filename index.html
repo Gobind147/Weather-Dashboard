@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+        #weather {
+            margin: 20px;
+        }
+        #current-weather, #forecast {
+            margin: 20px 0;
+        }
+        #search {
+            margin: 20px;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Weather Dashboard</h1>
+    <div id="search">
+        <input type="text" id="city-input" placeholder="Enter city name">
+        <button id="search-btn">Search</button>
+    </div>
+    <div id="weather">
+        <div id="current-weather">
+            <h2>Current Weather</h2>
+            <p id="location"></p>
+            <p id="temperature"></p>
+            <p id="description"></p>
+        </div>
+        <div id="forecast">
+            <h2>Forecast</h2>
+            <div id="forecast-data"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
